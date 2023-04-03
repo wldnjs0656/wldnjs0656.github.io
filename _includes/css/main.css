@@ -79,7 +79,10 @@ hr.star-primary:after {
 .img-centered {
     margin: 0 auto;
 }
-
+.img-responsive{
+    border-radius: 50%;
+    border: 8px solid #b2b2b2;
+}
 header {
     text-align: center;
     color: #fff;
