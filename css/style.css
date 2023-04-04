@@ -157,7 +157,7 @@ div.sns i{
 .textbox h1{
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 700;
-  font-size: 505px;
+  font-size: 3800%;
   letter-spacing: -40px;
   color: #000;
 }
@@ -166,8 +166,9 @@ div.sns i{
   font-weight: 600;
   font-size: 20px;
   color: #000;
-  width: 100%;
   margin-top: 50px;
+  overflow: hidden;
+  position: absolute;
 }
 
 .content{
