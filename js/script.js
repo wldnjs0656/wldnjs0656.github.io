@@ -1,3 +1,40 @@
+/******scroll******/
+$(function(){
+  $('.nav1').click(function(){
+    let offset = $('.textbox').offset(); 
+     $('html').animate({scrollTop : offset.top}, 350);
+
+  });
+});
+$(function(){
+  $('.nav2').click(function(){
+    let offset = $('.skill').offset(); 
+     $('html').animate({scrollTop : offset.top}, 800);
+
+  });
+});
+$(function(){
+  $('.nav3').click(function(){
+    let offset = $('.resume').offset(); 
+     $('html').animate({scrollTop : offset.top}, 900);
+
+  });
+});
+$(function(){
+  $('.nav4').click(function(){
+    let offset = $('.portfolioa').offset(); 
+     $('html').animate({scrollTop : offset.top}, 1000);
+
+  });
+});
+$(function(){
+  $('.nav5').click(function(){
+    let offset = $('.portfolioc').offset(); 
+     $('html').animate({scrollTop : offset.top}, 1400);
+
+  });
+});
+
 /****nav*****/
 function myFuc(e){
             
