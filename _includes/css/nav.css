@@ -1,0 +1,60 @@
+.hamburger{
+    position: relative;
+   
+}
+.ham{
+    position: absolute;
+    width: 35px;
+    top: 20px;
+    left: 30px;
+}
+.bar1, .bar2, .bar3{
+    display: block;
+    height: 5px;
+    background: #959595;
+    margin: 6px 0;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.change .bar1{
+    transform: rotate(-45deg) translate(-5px, 10px);
+}
+.change .bar2{
+    opacity: 0;
+}
+.change .bar3{
+    transform: rotate(45deg) translate(-5px, -10px);
+}
+.hamnavi{
+    width: 500px;
+    height: 659px;
+    background-color: #f8d17b;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    transition: all 300ms;
+    z-index: 10000;
+}
+.hamnavi li{
+    line-height: 70px;
+    text-align: center;
+}
+.hamnavi li a:hover{
+    color: #f8d17b;
+    background: linear-gradient(to right, #959595 0%, #f8d17b 100%);
+}
+.hamnavi li a{
+    color: #959595;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 10px 120px 10px 120px;
+}
+.hamnavi p{
+    font-size: 10px;
+    color: #959595;
+    margin-top: 250px;
+}
+.hamnavi.act{
+    transform: translateX(-400px);
+
+}
