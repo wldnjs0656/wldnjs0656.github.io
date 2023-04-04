@@ -1,3 +1,163 @@
----
-layout: default
---
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-left">
+                <div class="hamburger">
+                    <nav class="ham" onclick="myFuc(this)">
+                        <span class="bar1"></span>
+                        <span class="bar2"></span>
+                        <span class="bar3"></span>
+                    </nav>
+                
+                    <nav class="hamnavi act" id="hamnavi">
+                        <ul class="mynav">
+                            <li><a href="#">HOME</a></li>
+                            <li><a href="#">ABOUT</a></li>
+                            <li><a href="#">RESUME</a></li>
+                            <li><a href="#">PORTFOLIO</a></li>
+                            <li><a href="#">CONTACT</a></li>
+                            <p class="text-center">Copyright &copy; wldnjs0656</p>
+                        </ul>
+                    </nav>
+                </div>
+                <img src="images/me.png" alt="me" class="me">
+                <h1 class="text-center animate__animated animate__heartBeat">JIWON SHIN</h1>
+                <div class="sns d-flex">
+                    <a href="#"><i class="ri-instagram-line"></i></a>
+                    <a href="#"><i class="ri-twitter-line"></i></a>
+                    <a href="#"><i class="ri-facebook-circle-line"></i></a>
+                    <a href="#"><i class="ri-kakao-talk-line"></i></a>
+                </div>
+                <div class="nav">
+                    <ul class="leftmenu1">
+                        <li class="box1"><a href="#"><i class="ri-home-smile-line"></i><span>Home</span></a></li>
+                    </ul>
+                    <ul class="leftmenu2">
+                        <li class="box2"><a href="#"><i class="ri-user-smile-line"></i><span>About</span></a></li>
+                    </ul>
+                    <ul class="leftmenu3">
+                        <li class="box3"><a href="#"><i class="ri-file-text-line"></i><span>Resume</span></a></li>
+                    </ul>
+                    <ul class="leftmenu4">
+                        <li class="box4"><a href="#"><i class="ri-layout-line"></i><span>Portfolio</span></a></li>
+                    </ul>
+                    <ul class="leftmenu5">
+                        <li class="box5"><a href="#"><i class="ri-mail-line"></i><span>Contact</span></a></li>
+                    </ul>
+                </div>
+                <div class="copy text-center">
+                    <p>Copyright &copy; wldnjs0656</p>
+                    <p>All Rights Reserved.</p>
+                </div>
+               
+<!-- /*****************col-right********************/ -->
+
+            </div>
+            <div class="col-right">
+                <div class="row">
+                    <div class="col-11 col-md-12 content section aniUtil_onMouse aniUtil_active">
+                        <div class="textbox">
+                            <h1>hello</h1>
+                            <p>PORTFOLIO COPYRIGHT &copy; WLDNJS0656 ALLRIGHT RESERVED MY POTRFOLIO JI WON SHIN POR</p>
+                        </div>
+
+                    </div>
+                    <div class="col-11 col-md-12 skill">
+                        <h1>My Skill</h1>
+
+                        <div id="skill1" class="skills" data-width="90" data-background="#ffc107">html,css (90%)</div>
+                        <div id="skill2" class="skills" data-width="85" data-background="#ff5722">javaScript (85%)</div>
+                        <div id="skill3" class="skills" data-width="95" data-background="#213917">database (95%)</div>
+                        <div id="skill4" class="skills" data-width="79" data-background="#f44336">java (79%)</div>
+                        <div id="skill5" class="skills" data-width="88" data-background="#3b5998">react (88%)</div>
+                    </div>
+
+                    <div class="col-11 col-md-12 resume">
+                        <h1>Resume</h1>
+                        <div class="paper">
+                            <img src="images/이력서 3.avif" alt="#" class="me_">
+                            <img src="images/이력서.png" alt="#" class="re">
+                            <img src="images/이력서2.png" alt="#" class="su">
+                        </div>
+                    </div>
+
+                    <div class="col-11 col-md-12 portfolioa">
+                        <h1>portfolio</h1>
+                        <div class="slideshow-container">
+                            <div class="mySlides fade">
+                              <img src="images/slide1.png">
+                            </div>
+                            <div class="mySlides fade">
+                              <img src="images/slide2.png">
+                            </div>
+                            <div class="mySlides fade">
+                              <img src="images/slide3.png">
+                            </div>
+                            <a class="prev" onclick="plusSlides(-1)">❮</a>
+                            <a class="next" onclick="plusSlides(1)">❯</a>
+                            </div>
+                            <br>
+                            <div id="dot">
+                              <span class="dot" onclick="currentSlide(1)"></span> 
+                              <span class="dot" onclick="currentSlide(2)"></span> 
+                              <span class="dot" onclick="currentSlide(3)"></span> 
+                            </div>
+                            
+                    </div>
+                    <div class="col-11 col-md-12 portfoliob">
+                        <h1>Introduce</h1>
+                        <img id="myImg" src="images/back.jpg" alt="portfolio"  style="width:100%;max-width:300px">
+
+
+                        <div id="myModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="img01">
+                        <div id="caption"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-11 col-md-12 portfolioc">
+                        <h1>contact</h1>
+                        <form method="post">
+                            <div class="postbox">
+                                <label for="name">Your Name</label>
+                                <input type="text">
+                                <label for="email">Your Email</label>
+                                <input type="text">
+                                <label for="name">Message</label>
+                                <input type="text">
+                                <button type="submit">SEND</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <footer class="col-11 col-md-12 footer">
+                        <p>Copyright &copy; wldnjs0656</p>
+                        <p>All Rights Reserved.</p>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script src="js/skill.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/animate.min.js"></script>
+</body>
+</html>
